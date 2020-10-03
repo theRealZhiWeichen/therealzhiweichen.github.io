@@ -149,12 +149,8 @@
                   <div class="row">
                     <div class="col-lg-4">
                       <svg>
-                        <defs>
-                          <clipPath id="circleView">
-                            <circle cx="70" cy="70" r="70" fill="#FFFFFF" />
-                          </clipPath>
-                        </defs>
-                      <image width="140" height="140" xlink:href="images/zhiweichen.jpg" clip-path="url(#circleView)" />
+                        <defs><clipPath id="circleView"><circle cx="70" cy="70" r="70" fill="#FFFFFF" /></clipPath></defs>
+                        <image width="140" height="140" xlink:href="images/zhiweichen.jpg" clip-path="url(#circleView)" />
                       </svg>
                       <h4><br>Zhi Weichen</h4>
                       <p>BEng(CompSc), IV</p>
@@ -167,7 +163,7 @@
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
                       <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                      <h4><br>Cui Heming</h4>
+                      <h4><br>Dr. Cui Heming</h4>
                       <p>Supervisor</p>
                     </div><!-- /.col-lg-4 -->
                   </div><!-- /.row -->
@@ -245,53 +241,6 @@
           <a href="#"><img src="images/Back2Top.png" width="30"></a>
         </p>
       </footer>
-
-
-<<script>
-
-dragElement(document.getElementById("mydiv"));
-
-function dragElement(elmnt) {
-var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-if (document.getElementById(elmnt.id + "header")) {
-  // if present, the header is where you move the DIV from:
-  document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-} else {
-  // otherwise, move the DIV from anywhere inside the DIV:
-  elmnt.onmousedown = dragMouseDown;
-}
-
-function dragMouseDown(e) {
-  e = e || window.event;
-  e.preventDefault();
-  // get the mouse cursor position at startup:
-  pos3 = e.clientX;
-  pos4 = e.clientY;
-  document.onmouseup = closeDragElement;
-  // call a function whenever the cursor moves:
-  document.onmousemove = elementDrag;
-}
-
-function elementDrag(e) {
-  e = e || window.event;
-  e.preventDefault();
-  // calculate the new cursor position:
-  pos1 = pos3 - e.clientX;
-  pos2 = pos4 - e.clientY;
-  pos3 = e.clientX;
-  pos4 = e.clientY;
-  // set the element's new position:
-  elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-  elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-}
-
-function closeDragElement() {
-  // stop moving when mouse button is released:
-  document.onmouseup = null;
-  document.onmousemove = null;
-}
-}
-</script>
 
   </body>
 </html>
