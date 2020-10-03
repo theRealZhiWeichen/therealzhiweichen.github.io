@@ -7,15 +7,22 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <!-- custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/about.css">
+
+
 
     <title>About</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
     <!-- Using Official Bootstrap 4 Example, retriving from https://getbootstrap.com/docs/4.5/examples/blog/ -->
+
+
+
+
     <div class="container">
-      <header class="blog-header py-3">
+      <header class="blog-header py-3" >
         <div class="row flex-nowrap justify-content-between align-items-center">
 
           <div class="col-4 pt-1">
@@ -23,7 +30,7 @@
           </div>
 
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="#" style="font-variant:small-caps">Bidl-Hlf</a>
+            <a class="blog-header-logo text-dark" href="../index.html" style="font-variant:small-caps">Bidl-Hlf</a>
           </div>
 
           <div class="col-4 d-flex justify-content-end align-items-center">
@@ -35,18 +42,203 @@
 
         </div>
       </header>
-
       <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
-          <a class="p-2 text-muted" href="statics/about.html" style="font-variant:small-caps">About Bidl-Hlf</a>
+          <a class="p-2 text-muted" href="#" style="font-variant:small-caps">About Bidl-Hlf</a>
           <a class="p-2 text-muted" href="#" style="font-variant:small-caps">Project Plan</a>
-          <a class="p-2 text-muted" href="#" style="font-variant:small-caps">Timeline</a>
-          <a class="p-2 text-muted" href="#" style="font-variant:small-caps">Methodology</a>
+          <a class="p-2 text-muted" href="../index.html#timeline" style="font-variant:small-caps">Timeline</a>
+          <a class="p-2 text-muted" href="#" style="font-variant:small-caps">Project Report</a>
           <a class="p-2 text-muted" href="#" style="font-variant:small-caps">Documentation</a>
           <a class="p-2 text-muted" href="https://github.com/theRealZhiWeichen/therealzhiweichen.github.io" style="font-variant:small-caps">Github</a>
         </nav>
       </div>
+      <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 font-italic">About the Project</h1>
+          <p class="lead my-4">We will guide you through the development of Bidl,<br> but first let's take a look <br> at the background of the industry.</p>
+        </div>
+      </div>
 
+      <main role="main" class="container">
+        <div class="row">
+          <div class="col-md-8 blog-main">
+            <h3 class="pb-4 mb-4 font-italic border-bottom" style="font-variant:small-caps">
+              Bidl-Hlf
+            </h3>
+
+            <div class="blog-post">
+              <h2 class="blog-post-title" id="backgroundInfo">Background Information</h2>
+              <hr>
+              <blockquote>
+                <p>#This is a briefing about background of blockchain</p>
+              </blockquote>
+              <h3 class="anchor" id="blockchain">Blockchain</h3>
+              <p>Detailed intro to blockchain</p>
+              <h3 id="consensus">Consensus</h3>
+              <p>Detailed intro to Consensus algorithms</p>
+              <pre><code>Example code block here</code></pre>
+              <br>
+
+              <hr>
+              <h2 class="blog-post-title" id="currentAlgo">Currently-used Consensus algorithms</h2>
+              <hr>
+              <blockquote>
+                <p>#This is a briefing about currently used consensus algorithms: PBFT, BFT-SMaRt.</p>
+              </blockquote>
+              <h3 id="pbft">Partial Byzantine Fault Tolerance</h3>
+              <p>Detailed intro to PBFT algorithm</p>
+              <h3 id="bft-smart">BFT-SMaRt</h3>
+              <p>Detailed intro to Byzantine Fault Tolerance - State Machine Replicant algorithm</p>
+              <br>
+
+              <hr>
+              <h2 class="blog-post-title" id="bidl">Bidl</h2>
+              <hr>
+              <blockquote>
+                <p>#This is a briefing about Bidl: principle, architecture, performance.</p>
+              </blockquote>
+              <h3 id="principle-bidl">Principle</h3>
+              <p>Detailed intro to principle of Bidl</p>
+              <h3 id="architecture-bidl">architecture</h3>
+              <p>Detailed intro to architecture of Bidl</p>
+              <h3 id="performance-bidl">performance</h3>
+              <p>Detailed intro to performance of Bidl</p>
+              <br>
+
+              <hr>
+              <h2 class="blog-post-title" id="hlf">HLF</h2>
+              <hr>
+              <blockquote>
+                <p>#This is a briefing about HLF: principle, architecture, performance.</p>
+              </blockquote>
+              <h3 id="principle-hlf">Principle</h3>
+              <p>Detailed intro to principle of HLF</p>
+              <h3 id="architecture-hlft">architecture</h3>
+              <p>Detailed intro to architecture of HLF</p>
+              <h3 id="performance-hlf">performance</h3>
+              <p>Detailed intro to performance of HLF</p>
+              <br>
+
+              <hr>
+              <h2 class="blog-post-title" id="bidl-hlf">Bidl-HLF</h2>
+              <hr>
+              <blockquote>
+                <p>#This is a briefing about implementing our Bidl on top of HLF code base.</p>
+              </blockquote>
+              <h3 id="principle-hlf">Principle</h3>
+              <p>Detailed intro to principle of HLF</p>
+              <h3 id="architecture-hlft">architecture</h3>
+              <p>Detailed intro to architecture of HLF</p>
+              <h3 id="performance-hlf">performance</h3>
+              <p>Detailed intro to performance of HLF</p>
+              <br>
+
+              <hr>
+              <h2 class="blog-post-title" id="ourteam">Our team</h2>
+              <hr>
+              <blockquote>
+                <p>#This is a briefing about our team.</p>
+              </blockquote>
+              <br>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <svg>
+                        <defs>
+                          <clipPath id="circleView">
+                            <circle cx="70" cy="70" r="70" fill="#FFFFFF" />
+                          </clipPath>
+                        </defs>
+                      <image width="140" height="140" xlink:href="images/zhiweichen.jpg" clip-path="url(#circleView)" />
+                      </svg>
+                      <h4><br>Zhi Weichen</h4>
+                      <p>BEng(CompSc), IV</p>
+                    </div><!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4">
+                      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                      <h4><br>Qi ji</h4>
+                      <p>PHD Mentor</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                      <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                      <h4><br>Cui Heming</h4>
+                      <p>Supervisor</p>
+                    </div><!-- /.col-lg-4 -->
+                  </div><!-- /.row -->
+              <br>
+
+
+
+
+
+
+            </div><!-- /.blog-post -->
+          </div><!-- /.blog-main -->
+
+          <aside class="col-md-4 blog-sidebar" >
+
+            <div class="make-me-sticky"  style="float:right">
+              <h3 class="font-italic" style="padding-left:0.5em">Content</h3>
+                <ul class="nav flex-md-column flex-row justify-content-between">  <!---->
+                <li class="nav-item">
+                  <a class="nav-link pl-0" href="#backgroundInfo" ><h5>Background info</h5></a>
+                  <ul class="nav flex-md-column ml-2 hidden-sm-down">
+                    <li class="nav-item"><a href="#blockchain" class="nav-link" style="color:#353A3F">Blockchain</a></li>
+                    <li class="nav-item"><a href="#consensus" class="nav-link" style="color:#353A3F">Consensus</a></li>
+                  </ul>
+                </li>
+                <li>
+                <a class="cata-heading" href="#currentAlgo"><h5>Current algorithms</h5></a>
+                  <ul>
+                    <li><a href="#pbft" style="color:#353A3F">PBFT</a></li>
+                    <li><a href="#bft-smart" style="color:#353A3F">BFT-SMaRt</a></li>
+                  </ul>
+                </li>
+                <li>
+                <a class="cata-heading" href="#bidl"><h5>Bidl </h5></a>
+                <ul>
+                  <li><a href="#principle-bidl" style="color:#353A3F">Principle</a></li>
+                  <li><a href="#architecture-bidl" style="color:#353A3F">Architecture</a></li>
+                  <li><a href="#performance-bidl" style="color:#353A3F">Performance</a></li>
+                </ul>
+                </li>
+                <li>
+                <a class="cata-heading" href="#hlf"><h5>HLF </h5></a>
+                <ul>
+                  <li><a href="#principle-hlf" style="color:#353A3F">Principle</a></li>
+                  <li><a href="#architecture-hlf" style="color:#353A3F">Architecture</a></li>
+                  <li><a href="#performance-hlf" style="color:#353A3F">Performance</a></li>
+                </ul>
+                </li>
+                <li>
+                <a class="cata-heading" href="#bidl-hlf"><h5>Bidl-HLF </h5></a>
+                <ul>
+                  <li><a href="#principle-bidl-hlf" style="color:#353A3F">Principle</a></li>
+                  <li><a href="#architecture-bidl-hlf" style="color:#353A3F">Architecture</a></li>
+                  <li><a href="#performance-bidl-hlf" style="color:#353A3F">Performance</a></li>
+                </ul>
+                </li>
+                <li>
+                <a class="cata-heading" href="#ourteam"><h5>Our Team</h5></a>
+                </li>
+
+
+                </ul>
+            </div>
+
+
+          </aside><!-- /.blog-sidebar -->
+
+        </div><!-- /.row -->
+
+      </main><!-- /.container -->
+
+      <footer class="blog-footer" content="width=device-width">
+        <p>©2020, Weichen Zhi, ji Qi, Heming Cui. This website serves as part of the <strong>Final Year Project (COMP4801)</strong> at the University of Hong Kong</p>
+        <p>
+          <a href="#"><img src="images/Back2Top.png" width="30"></a>
+        </p>
+      </footer>
 
 
   </body>
