@@ -216,3 +216,15 @@ article {
     border-bottom: solid 1px #fff;
   }
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:60px;
+
+	right:60px;
+	background-color:#222;
+	color:#FFF;
+	border-radius:50px;
+	box-shadow: 2px 2px 3px #999;
+}
