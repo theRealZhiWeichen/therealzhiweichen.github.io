@@ -217,11 +217,12 @@ article {
   }
 }
 .float{
-	position:absolute;
+	position:fixed;
 	width:60px;
 	height:60px;
 	bottom:60px;
-  z-index: 9;
+  z-index: 9999;
+  opacity: 0.8;
 	right:60px;
 	background-color:#222;
 	color:#FFF;

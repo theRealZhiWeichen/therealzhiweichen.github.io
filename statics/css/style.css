@@ -154,7 +154,8 @@ h1, h2, h3, h4, h5, h6 {
 	width:60px;
 	height:60px;
 	bottom:60px;
-
+  z-index: 9999;
+  opacity: 0.8;
 	right:60px;
 	background-color:#222;
 	color:#FFF;
