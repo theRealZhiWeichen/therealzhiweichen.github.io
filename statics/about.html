@@ -45,7 +45,7 @@
       <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
           <a class="p-2 text-muted" href="#" style="font-variant:small-caps">About</a>
-          <a class="p-2 text-muted" href="#" style="font-variant:small-caps">Project Plan</a>
+          <a class="p-2 text-muted" href="https://github.com/theRealZhiWeichen/therealzhiweichen.github.io/blob/master/docs/_static/Project_Plan.pdf"  style="font-variant:small-caps">Project Plan</a>
           <a class="p-2 text-muted" href="../index.html#timeline" style="font-variant:small-caps">Timeline</a>
           <a class="p-2 text-muted" href="report.html" style="font-variant:small-caps">Project Report</a>
           <a class="p-2 text-muted" href="#" style="font-variant:small-caps">Documentation</a>
@@ -79,9 +79,17 @@
                 <p>#This is a briefing about background of blockchain</p>
               </blockquote>
               <h3 class="anchor" id="blockchain">Blockchain</h3>
-              <p>Detailed intro to blockchain</p>
+              <p>A Blockchain is a distributed database where the nodes are communicating using a p2p network. Blocks, each containing a batch of transaction records, are added tail-to-tail into the chain. As shown in Fig. 1, every block also includes a cryptographic hash of the previous block, and the entire chain is therefore protected from tampering its content.</p>
+              <div style="text-align:center">
+                <img src="images/Fig1.png" />
+                <h6 class="caption">
+                  Fig. 1 Structure of a blockchain
+                </h6>
+              </div>
               <h3 id="consensus">Consensus</h3>
-              <p>Detailed intro to Consensus algorithms</p>
+              <p>Besides, blockchains can be categorized into either a Permissioned or Permissionless one. Permissionless blockchains are maintained totally under the p2p network without any entrance barriers or identification. Therefore, in order to reach an agreement of which node to append the latest block to the chain, a <strong>consensus algorithm</strong> must be conducted. One of the well-known consensus algorithms for permissionless blockchain is Proof-of-Work (PoW), where all nodes have to compete in solving cryptographic puzzles, i.e., computation intensive works, and the first one presenting the verified solution gets the privilege to append the block. However, the apparent long time for computation is obviously against the requirement for a low-latency financial system. For instance, Bitcoin is only capable of dealing with less than 10 transactions per second with a latency up to an hour (Vukolic, 2015), while a financial system like Visa will handle up to 24k transactions per second with a latency of only milliseconds (Hasbrouck & Saar, 2013). 
+On the other hand, Permissioned blockchains enforces a set of trusted nodes, and uses a Byzantine fault tolerant consensus protocol which will guarantee the correctness of the system even when some nodes in the network became malicious. However, there are limitations to the existing permissioned blockchains, since the consensus protocol now used is of such low a performance that it became the performance bottleneck of the entire blockchain. Also, the sequential workflow (shown in Fig. 2) also degrades the performance, in that the part of the phases cannot run in parallel, which leads to a considerable latency.
+</p>
               <pre><code>Example code block here</code></pre>
               <br>
 
@@ -91,7 +99,7 @@
               <blockquote>
                 <p>#This is a briefing about currently used consensus algorithms: PBFT, BFT-SMaRt.</p>
               </blockquote>
-              <h3 id="pbft">Partial Byzantine Fault Tolerance</h3>
+              <h3 id="pbft">Practical Byzantine Fault Tolerance</h3>
               <p>Detailed intro to PBFT algorithm</p>
               <h3 id="bft-smart">BFT-SMaRt</h3>
               <p>Detailed intro to Byzantine Fault Tolerance - State Machine Replicant algorithm</p>
